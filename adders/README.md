@@ -38,13 +38,13 @@ When the gate delay is 0ns, all additions are done instantly so there are no iss
 
 ![Image3](./images/image1.png)
 
-Using a gate delay of 1 ns, we can see an accumulation in the overall time it takes for sum to output the result. This in turn triggers the error flag to high as seen below. This is due to the fact that the testbench periodically modifies the input values for a and b every 10 ns. Since we are using a 64 bit RCA, the largest possible delay is 128 \* 1 ns.
+Using a gate delay of 1 ns, I can see an accumulation in the overall time it takes for sum to output the result. This in turn triggers the error flag to high as seen below. This is due to the fact that the testbench periodically modifies the input values for a and b every 10 ns. Since I are using a 64 bit RCA, the largest possible delay is 128 \* 1 ns.
 
 ![Image4](./images/image4.png)
 
-In order to solve this problem, we need to update the frequency at which the values of a and b are changed to 128ns, to account for the longest 64 bit addition.
+In order to solve this problem, I need to update the frequency at which the values of a and b are changed to 128ns, to account for the longest 64 bit addition.
 
 ![Image5](./images/image5.png)
 
-We notice that when the input values are small, the addition takes less than 128 ns to complete, which explains the instances in which sum is undefined, and the error flag is high.
+I notice that when the input values are small, the addition takes less than 128 ns to complete, which explains the instances in which sum is undefined, and the error flag is high.
 

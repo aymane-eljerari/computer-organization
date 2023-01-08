@@ -31,6 +31,6 @@ I tested our CPU by sending it the new instructions (XORI, J, etc.) as well as t
 
 ## Modified Datapath
 
-![Image3](./images/image3.png)
+![Image3](./images/image3.jpg)
 
 For each additional instruction to be supported, new blocks needed to be added. Notably, J, JR, BNE, and LUI got their own blocks in the program to be run. BNE logic could have been done in the ALU, but for simplicity, the block was attached to the branch AND block and the branch direction was determined by the OR gate that detects whether either branch or BNE is triggered. We also added logic for the jump instruction address to extend to 32 bits (26 + 2 + 4) and extra logic for LUI to be written back into the write register immediately. Data control hazards are not a consideration in this lab, so we don’t need to add forwarding/extra select logic/bubbles to account for hazards. 

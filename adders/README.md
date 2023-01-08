@@ -25,15 +25,10 @@ Without delay, the circuit works without errors since there are no gate fluctuat
 ## Ripple Carry Adder Modules:
 
 - ***RCA\_64bit.v***: 64 bit Ripple Carry Adder built using 2 32 bit Ripple Carry Adders.
-
 - ***Verification\_64bits.v***: Validates the 64 bit sum using behavioral Verilog.
-
 - ***RCA\_64bit\_tb.v***: Testbench for 64 bit RCA, validates the sum using the verification, and compares it to the 64 bit RCA result.
-
 - ***RCA\_32bit.v***: 32 bit Ripple Carry adder built using 8 4 bit Ripple Carry Adders.
-
 - ***RCA\_4bit.v***: 4 bit Ripple Carry adder built using 4 Full Adders.
-
 - ***fulladder.v***: Performs 1 bit addition using and, or and not gates
 
 

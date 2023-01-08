@@ -1,14 +1,21 @@
 ﻿
 **Carry Select Adder Modules:**
 
-    *CSA\_tb.v*: Validates the sum, carry out behavior of CSA.v by assigning values and comparing them for an error.
-    *CSA.v*: Carry Select Adder that runs three 32 bit additions and one 2-1 mux. It computes the overall sum and carry out.
-    *ThTwoBA.v*: 32-bit RCA formed by two sixteen bit RCA blocks.
-    *SteenBA.v*: 16-bit RCA formed by four 4-bit RCA blocks.
-    *FBA.v*: 4-bit adder formed by four 1-bit full adders.
-    *FA\_str.v*: Provided one-bit full adder.
-    *HA\_str.v*: Provided one-bit half adder.
-    *MUX.v*: 2-1 multiplexer that chooses one of two 32-bit numbers based on a select bit. This allows the CSA to roughly half its latency.
+*CSA\_tb.v*: Validates the sum, carry out behavior of CSA.v by assigning values and comparing them for an error.
+
+*CSA.v*: Carry Select Adder that runs three 32 bit additions and one 2-1 mux. It computes the overall sum and carry out.
+
+*ThTwoBA.v*: 32-bit RCA formed by two sixteen bit RCA blocks.
+
+*SteenBA.v*: 16-bit RCA formed by four 4-bit RCA blocks.
+
+*FBA.v*: 4-bit adder formed by four 1-bit full adders.
+
+*FA\_str.v*: Provided one-bit full adder.
+
+*HA\_str.v*: Provided one-bit half adder.
+
+*MUX.v*: 2-1 multiplexer that chooses one of two 32-bit numbers based on a select bit. This allows the CSA to roughly half its latency.
 
 
 **Carry Select Adder timing results:**
@@ -25,10 +32,15 @@ Without delay, the circuit works without errors since there are no gate fluctuat
 **Ripple Carry Adder Modules:**
 
 *RCA\_64bit.v*: 64 bit Ripple Carry Adder built using 2 32 bit Ripple Carry Adders.
+
 *Verification\_64bits.v*: Validates the 64 bit sum using behavioral Verilog.
+
 *RCA\_64bit\_tb.v*: Testbench for 64 bit RCA, validates the sum using the verification, and compares it to the 64 bit RCA result.
+
 *RCA\_32bit.v*: 32 bit Ripple Carry adder built using 8 4 bit Ripple Carry Adders.
+
 *RCA\_4bit.v*: 4 bit Ripple Carry adder built using 4 Full Adders.
+
 *fulladder.v*: Performs 1 bit addition using and, or and not gates
 
 

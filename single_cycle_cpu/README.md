@@ -1,5 +1,5 @@
 
-## Modules:
+## Modules
 
 - ***cp.v***: Top CPU module that instantiates all the relevant blocks and the buses. 
 - ***tb_cpu.v***: Testbench that tests multiple inputs into cpu to check for hazards. In other words, this loads instructions at specific locations in instruction memory.   
@@ -16,7 +16,7 @@
 - ***Adder.v***: General adder that does the plus four. 
 
 
-## Waveform Diagrams:
+## Waveform Diagrams
 
 | ![Image1](./images/image1.png) |
 |:--:|

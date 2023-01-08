@@ -1,5 +1,5 @@
 
-## Modules:
+## Modules
 
 - ***Pipeline.v***: Top module that handles all pipeline register instantiations and validation logic.
 - ***Pipeline_tb.v***: Testbench that tests multiple inputs into pipeline to check for hazards.
@@ -14,7 +14,7 @@
 - ***S2_Register.v***: Register that contains the same as above.
 - ***S3_Register.v***: Register that contains the same as above. Write data is pipelined back to nbit register at this step.
 
-## Waveform Diagrams:
+## Waveform Diagrams
 
 ![Image1](./images/image1.png)
 

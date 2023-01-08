@@ -1,7 +1,7 @@
 
 ## Modules
 
-- ***Hazardunit.v***: Checks if (memread is enabled AND the last destination operand is the same as any of the present operands) OR if (the destination register of the memory stage is the same as any of the present operands AND MemDest is not 0). If this is true, the program inserts a nop ({IFIDWrite PCWrite, HazardMux) = (0,0,1). Otherwise, the program inserts no nop (1,1,0). This way, the CPU implements load-use, one-ahead, and two-ahead hazard detection.
+- ***hazard_unit.v***: Checks if (memread is enabled AND the last destination operand is the same as any of the present operands) OR if (the destination register of the memory stage is the same as any of the present operands AND MemDest is not 0). If this is true, the program inserts a nop ({IFIDWrite PCWrite, HazardMux) = (0,0,1). Otherwise, the program inserts no nop (1,1,0). This way, the CPU implements load-use, one-ahead, and two-ahead hazard detection.
 
 ## Waveform Diagrams
 

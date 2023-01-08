@@ -1,5 +1,5 @@
 ﻿
-## Carry Select Adder Modules:
+## Carry Select Adder Modules
 
 - ***CSA\_tb.v***: Validates the sum, carry out behavior of CSA.v by assigning values and comparing them for an error.
 - ***CSA.v***: Carry Select Adder that runs three 32 bit additions and one 2-1 mux. It computes the overall sum and carry out.
@@ -22,7 +22,7 @@ Without delay, the circuit works without errors since there are no gate fluctuat
 ![Image2](./images/image2.png)
 
 
-## Ripple Carry Adder Modules:
+## Ripple Carry Adder Modules
 
 - ***RCA\_64bit.v***: 64 bit Ripple Carry Adder built using 2 32 bit Ripple Carry Adders.
 - ***Verification\_64bits.v***: Validates the 64 bit sum using behavioral Verilog.
@@ -32,7 +32,7 @@ Without delay, the circuit works without errors since there are no gate fluctuat
 - ***fulladder.v***: Performs 1 bit addition using and, or and not gates
 
 
-## Ripple Carry Adder timing results:
+## Ripple Carry Adder timing results
 
 When the gate delay is 0ns, all additions are done instantly so there are no issues updating the input values every 10 ns.
 
